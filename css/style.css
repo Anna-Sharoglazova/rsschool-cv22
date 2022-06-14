@@ -9,7 +9,7 @@ html, body{
 .box{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: flex-start;
     flex: 1 0 auto;
     margin-top: auto;
@@ -51,10 +51,6 @@ h2{
     color:  rgb(255, 255, 255);
 }
 
-.code-h2
-{
-    margin-left: 45%;
-}
 
 .bio-column{
     display: flex;
@@ -69,8 +65,9 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    width: 40%;
     font-size: 20px;
-    padding-left: 4%;
+    padding-inline: 5%;
 }
 
 .skills-box{
@@ -92,12 +89,12 @@ h2{
     justify-content: space-between;
     margin-left: 5%;
 }
+
 .code-column{
     display: flex;
+    width: 40%;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: -20%;
-    
+    justify-content: end;
 }
 
 a{
@@ -119,18 +116,25 @@ hr {
 }
 
 
+pre{
+    display: block;
+    white-space: pre;
+    margin: 1em 0;
+}
+
 a:hover
 {
     color: #8d661e;
 }
 
 .summary{
-    width: 50%;
+    width: 100%;
 
 }
 
 .summary p{
     width: 90%;
+    overflow: auto;
     text-align: left;
 }
 
